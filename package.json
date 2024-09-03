@@ -1,0 +1,16 @@
+{
+  "name": "actividad-2-formulario",
+  "version": "1.0.0",
+  "description": "Esta es la entrega de la actividad 2 de un formulario con validaciones",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "29.0.1",
+    "live-server": "^1.2.2"
+  }
+}

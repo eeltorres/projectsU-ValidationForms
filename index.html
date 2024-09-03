@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Formulario de cuentas</h1>
+    <form id="form">
+        <label for="i_nombre">Ingrese su Nombre</label>
+        <input type="text" id="i_nombre"   required />
+
+        <label for="i_fechanac">Seleccione su fecha de nacimiento</label>
+        <input type="date" id="i_fechanac" required />
+
+        <label for="i_correo">Ingrese su correo electrónico</label>
+        <input type="email" id="i_correo" required />
+
+        <label for="i_telefono">Ingrese su número telefónico</label>
+        <input type="tel" id="i_telefono" min="8" max="10" required />
+
+        <label for="i_direccion">Ingrese la dirección donde reside actualmente</label>
+        <input type="text" id="i_direccion" minlength="10" maxlength="50" />
+
+        <label for="i_departamento">Seleccione departamento donde reside</label>
+        <input list="listaDep" placeholder="Seleccione un departamento" id="i_departamento" style="display: inline-block;" required />
+
+        <label for="i_cbox">¿Está casado/a?</label>
+        <input type="checkbox" id="i_cbox" />
+
+        <!-- Seccion para los datos del conyugue -->
+        <div id="div_conyuge" style="display: none;">
+            <label for="i_nombreC">Ingrese nombre del conyugue</label>
+            <input type="text" id="i_nombrec" min="0" minlength="3" />
+
+            <label for="i_fechanacC">Seleccione fecha de nacimiento de conyugue</label>
+            <input type="date" id="i_fechanacc"  />
+
+            <label for="i_correoC">Ingrese correo electrónico del conyugue</label>
+            <input type="email" id="i_correoc"  />
+
+            <label for="i_telefonoC">Ingrese numero telefonico del conyugue</label>
+            <input type="tel" id="i_telefonoc" />
+
+            <label for="i_direccionC">Ingrese la dirección del conyugue</label>
+            <input type="text" id="i_direccionc" />
+
+            <label for="i_departamentoC">Seleccione departamento del conyugue</label>
+            <input list="listaDep" placeholder="Seleccione un departamento" id="i_departamentoc" />
+
+
+            <label for="i_fechacasamientoC">Ingrese fecha de Casamiento</label>
+            <input type="date"  id="i_fechacasamientoc" />
+        </div>
+
+        <input type="submit" id="i_submit" value="Enviar datos" disabled="true"/>
+    </form>
+
+    <!-- Lista desplegable de Departamentos de Guatemala -->
+    <datalist  id="listaDep" >
+        <option value="Alta Verapaz">
+        <option value="Baja Verapaz">
+        <option value="Chimaltenango">
+        <option value="Chiquimula">
+        <option value="El Progreso">
+        <option value="Escuintla">
+        <option value="Guatemala">
+        <option value="Huehuetenango">
+        <option value="Izabal">
+        <option value="Jalapa">
+        <option value="Jutiapa">
+        <option value="Petén">
+        <option value="Quetzaltenango">
+        <option value="Quiché">
+        <option value="Retalhuleu">
+        <option value="Sacatepéquez">
+        <option value="San Marcos">
+        <option value="Santa Rosa">
+        <option value="Sololá">
+        <option value="Suchitepéquez">
+        <option value="Totonicapán">
+        <option value="Zacapa">
+    </datalist>
+
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

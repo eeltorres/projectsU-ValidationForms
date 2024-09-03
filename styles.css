@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(196, 234, 234);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label{
+    float: left;
+    clear: both;
+    margin: 2px;
+}
+
+input{
+    float: inline-start;
+    height: 20px;
+    width: 230px;
+}
+
+#i_submit{
+    font-weight: bold 10px ;
+    padding: 2px;
+    border: solid;
+    height: 50px;
+    width: 100px;
+    margin: 25px;
+    background-color: rgb(195, 230, 108);
+}
+
+.inputValid {
+    border-color: rgb(137, 241, 137);
+    background-color: rgb(142, 246, 142);
+    font-weight: bold;
+}
+
+.inputInvalid{
+    border: 2px solid red;
+
+}
