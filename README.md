@@ -5,6 +5,8 @@ Este proyecto fue creado utilizando las siguientes tecnologías:
 - Node JS
 - Electron JS 
 - JavaScript
+- HTML
+- CSS
 - Path
 
 Su propósito es realizar la validación de datos ingresados por un usuario final en un formulario simple.
